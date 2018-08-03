@@ -11,3 +11,9 @@ function fuzzyMatch(array, letters) {
     return element.slice(0, lettersLength) == letters
   })
 }
+
+function matchName(drivers, name) {
+  return drivers.filter(function (element) {
+    return element.name == name
+  })
+}
