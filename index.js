@@ -4,3 +4,9 @@ function findMatching(array, match) {
     return element == match || element == match.toLowerCase()
   })
 }
+
+function fuzzyMatch(array, letter) {
+  return array.filter(function (element) {
+    return element.first == letter
+  })
+}
