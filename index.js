@@ -5,8 +5,9 @@ function findMatching(array, match) {
   })
 }
 
-function fuzzyMatch(array, letter) {
+function fuzzyMatch(array, letters) {
+  const lettersLength = letters.length
   return array.filter(function (element) {
-    return element.first == letter
+    return element.slice(0, lettersLength) == letters
   })
 }
